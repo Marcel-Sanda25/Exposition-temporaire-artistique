@@ -1,0 +1,242 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg , #000000, #0073e6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 60px;
+    height: auto;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+/* Galerie d'images */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    width: 200px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image-container:hover {
+    transform: translateY(-10px);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-container p {
+    margin-top: 10px;
+    color: #a07e0f;
+    font-weight: bold;
+}
+
+
+
+
+/* Boutons */
+button, #accept-cookies, #decline-cookies {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#decline-cookies {
+    background-color: #f44336;
+    color: white;
+}
+
+#accept-cookies:hover {
+    background-color: #45a049;
+}
+
+#decline-cookies:hover {
+    background-color: #d32f2f;
+}
+
+/* Cookies Consent Section */
+#cookie-consent {
+    display: block; /* Le pop-up est affiché dès le chargement de la page */
+    position: fixed; /* Fixé en bas de la page */
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg , #000000, #003060);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000; /* Assure que le pop-up soit au-dessus des autres éléments */
+}
+
+.cookie-consent-popup {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(90deg , #000000, #003060);
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    gap: 20px; /* Espace entre les sections */
+}
+
+.container .section {
+    flex: 1; /* Les deux sections prennent la même largeur */
+}
+
+.container h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222;
+    text-decoration: underline;
+}
+
+.container p {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.4em;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.translation {
+    border-left: 2px solid #ccc; /* Ligne de séparation entre les deux sections */
+    padding-left: 20px;
+}
+
+
+
+
+
+.logo1 {
+    position: relative;
+    display: block;
+}
+
+.logo-bio {
+    width: 100px; /* Taille du logo */
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0; /* Positionnement à droite */
+    margin-left: 20px; /* Optionnel : espacement avec le texte */
+    border-radius: 10px; /* Optionnel : arrondi des bords */
+}
+
+
+
+
+body {
+    background-image: url('images/10.jpg'); /* Remplacez 'chemin-vers-image/image.jpg' par le chemin de votre image */
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    #gallery img {
+        width: 100%;
+    }
+}
+
